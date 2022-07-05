@@ -1,0 +1,28 @@
+.ACstyle-title{
+    font-size: 3rem;
+}
+
+.ACstyle-text {
+    font-size: 2rem;
+}
+
+
+@media (max-width: 992px) {
+    .ACstyle-title{
+        font-size: 2rem;
+    }
+    
+    .ACstyle-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .ACstyle-title{
+        font-size: 1.5rem;
+    }
+    
+    .ACstyle-text {
+        font-size: 1rem;
+    }
+}
