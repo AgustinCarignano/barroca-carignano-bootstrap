@@ -1,5 +1,34 @@
 /* Agregados unos pocos estilos y medias queries para poder adaptar el tamaño del texto en el banner de la página "la casita barroca" */
 
+.bg-barro {
+    background-color: #8E37A6;
+}
+
+.main {
+    background-color: rgb(231, 211, 202, 25%);
+}
+
+.card {
+    box-shadow: 2px 2px 5px rgb(0,0,0,25%);
+}
+
+.PRUEBA:hover {
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+.boton {
+    background-color: #893492;
+    color: white;
+    transition: background 0.3s;
+}
+
+.boton:hover {
+    background-color: #711d7a;
+    color: white;
+    border: solid 1px #711d7a;
+}
+
 .ACstyle-title{
     font-size: 3rem;
 }
