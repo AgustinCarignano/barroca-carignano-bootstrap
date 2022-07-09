@@ -4,7 +4,7 @@
     background-color: #8E37A6;
 }
 
-.main {
+body {
     background-color: rgb(231, 211, 202, 25%);
 }
 
@@ -12,10 +12,11 @@
     box-shadow: 2px 2px 5px rgb(0,0,0,25%);
 }
 
-.PRUEBA:hover {
+.navegacion li:hover {
     transform: scale(1.1);
     font-weight: bold;
 }
+
 
 .boton {
     background-color: #893492;
@@ -29,6 +30,100 @@
     border: solid 1px #711d7a;
 }
 
+.proyecto__texto {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.proyecto__texto p{
+    font-size: 1.5rem;
+}
+.proyecto__texto h3{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.proyecto__img {
+    display: flex;
+}
+/* .card{
+    position: relative;
+} */
+.card span{
+    position: absolute;
+    background-color: #893492;
+    color: white;
+    top: 20px;
+    left: 12px;
+    padding: 5px;
+    animation: promotion 2s infinite;
+}
+@keyframes promotion {
+    0%{
+        background-color: #893492;
+        color: white;
+    }
+    50%{
+        background-color:black;
+    }
+    100%{
+        background-color: #893492;
+        color: white;
+    }
+}
+
+.card {
+    transition: transform 0.5s;
+}
+.card:hover{
+    transform: scale(1.15);
+}
+
+/* .about {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    column-gap: 50px;
+    font-size: 1.3rem;
+    align-items: center;
+} */
+.about{
+    font-size: 20px;
+    line-height: 2rem;
+}
+.about span{
+    font-weight: bold;
+}
+
+.about img {
+    float: right;
+    width: 400px;
+}
+
+
+.servicios {
+    margin-top: 50px;
+}
+
+.servicios__detalle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 30px;
+}
+.servicios__detalle-card {
+    max-width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(0,0,0,25%);
+}
+.servicios__detalle-card img {
+    width: 95%;
+    margin: 0 10px 10px;
+}
+
+
 .ACstyle-title{
     font-size: 3rem;
 }
@@ -36,6 +131,18 @@
 .ACstyle-text {
     font-size: 2rem;
 }
+
+.contacto {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 100px;
+    /* align-items: center; */
+}
+
+.contacto__btn {
+    text-align: center;
+}
+
 
 
 @media (max-width: 992px) {
@@ -45,6 +152,28 @@
     
     .ACstyle-text {
         font-size: 1.5rem;
+    }
+
+    .contacto{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .formulario{
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px){
+    .proyecto__img{
+        flex-direction: column;
+    }
+    .proyecto__img img{
+        margin: 20px 0;
+    }
+
+    .servicios__detalle {
+        grid-template-columns: 1fr;
     }
 }
 

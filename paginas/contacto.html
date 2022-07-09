@@ -8,13 +8,14 @@
         <link rel="shortcut icon" href="../imagenes/favicon.ico"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="../css/style.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     </head>
 
     <body>
-        <header>
+        <header class="bg-barro">
             <!-- Navbar que se comprime en un menú pequeño con el tamaño de la pantalla -->
-            <nav class="navbar navbar-expand-md bg-primary"">
+            <nav class="navbar navbar-expand-md">
                 <div class="container">
                     <a class="navbar-brand" href="../index.html">
                         <img src="../imagenes/logo-principal2.png" width="120" height="80" alt="" />
@@ -23,21 +24,21 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto fw-semibold">
+                        <ul class="navbar-nav navegacion ms-auto">
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="../index.html">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="./productos.html">Productos</a>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a class="nav-link text-white" href="./asesoramiento.html">Asesoramiento</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="./about.html">La Casita</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="./la-casita-barroca.html">La Casita</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="./contacto.html">Contacto</a>
+                                <a class="nav-link text-white fw-bold" href="./contacto.html">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -45,65 +46,67 @@
             </nav>
         </header>
 
-        <main class="bg-secondary bg-gradient bg-opacity-25 py-3">
+        <main class="py-3">
             <!-- Título de la página -->
-            <h2 class="bg-primary my-3 text-light py-2 text-center">Contacto</h2>
+            <h2 class="titulos my-3 bg-barro text-light py-2 text-center">Contacto</h2>
 
-            <!-- Formulario de contacto -->
-            <form action="" class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-6 my-3">
-                        <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
-                    </div>
-                    <div class="col-md-6 my-3">
-                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
-                    </div>
-                    <div class="col-md-6 my-3">
-                        <input type="email" placeholder="Email" class="form-control" id="inputEmail4">
-                    </div>
-                    <div class="col-md-6 my-3">
-                        <input type="number" placeholder="Teléfono" class="form-control" id="inputNumberl4">
-                    </div>
-                    <div class="col-md-6 my-3">
-                        <label for="asunto">Asunto</label>
-                        <select class="form-select" name="asunto" aria-label="Default select example">
-                            <option selected>Seleccione una opción</option>
-                            <option value="1">Problemas con la compra</option>
-                            <option value="2">Más información</option>
-                            <option value="3">Quiero participar</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6 my-3">
-                        <div class="input-group">
-                            <span class="input-group-text">Mensaje</span>
-                            <textarea class="form-control" aria-label="With textarea"></textarea>
+            <section class="container contacto">
+                <!-- Formulario de contacto -->
+                <form action="" class="formulario">
+                    <div class="">
+                        <div class="my-3">
+                            <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                        </div>
+                        <div class="my-3">
+                            <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                        </div>
+                        <div class="my-3">
+                            <input type="email" placeholder="Email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="my-3">
+                            <input type="number" placeholder="Teléfono" class="form-control" id="inputNumberl4">
+                        </div>
+                        <div class="my-3">
+                            <label for="asunto">Asunto</label>
+                            <select class="form-select" name="asunto" aria-label="Default select example">
+                                <option selected>Seleccione una opción</option>
+                                <option value="1">Problemas con la compra</option>
+                                <option value="2">Más información</option>
+                                <option value="3">Quiero participar</option>
+                            </select>
+                        </div>
+                        <div class="my-3">
+                            <div class="input-group">
+                                <span class="input-group-text">Mensaje</span>
+                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="my-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                                <label class="form-check-label" for="inlineFormCheck">
+                                    Recibir novedades al correo
+                                </label>
+                            </div>
+                        </div>
+                        <div class="contacto__btn my-3">
+                            <button type="reset" class="btn boton mx-3">Limpiar</button>
+                        <!-- </div>
+                        <div class="my-3"> -->
+                            <button type="submit" class="btn boton mx-3">Enviar</button>
                         </div>
                     </div>
-                    <div class="col-12 my-3">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="inlineFormCheck">
-                            <label class="form-check-label" for="inlineFormCheck">
-                                Recibir novedades al correo
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-auto my-3">
-                        <button type="reset" class="btn btn-primary mb-3">Limpiar</button>
-                    </div>
-                    <div class="col-auto my-3">
-                        <button type="submit" class="btn btn-primary mb-3">Enviar</button>
-                    </div>
+                </form>
+                    
+                <!-- Mapa de ubicación del local -->
+                <div class="mapa ratio ratio-21x9 mt-2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418.5188039394187!2d-60.64005800185281!3d-32.94703753568531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab19dd19001d%3A0xf5b7d83be94fd96a!2sGaleria%20Calle%20Angosta!5e0!3m2!1ses-419!2sar!4v1655069591894!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-            </form>
-                   
-            <!-- Mapa de ubicación del local -->
-            <div class="ratio ratio-21x9 container mt-2">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418.5188039394187!2d-60.64005800185281!3d-32.94703753568531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab19dd19001d%3A0xf5b7d83be94fd96a!2sGaleria%20Calle%20Angosta!5e0!3m2!1ses-419!2sar!4v1655069591894!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-                        
+            </section>
+                                    
         </main>
 
-        <footer class="bg-primary text-white pt-2">
+        <footer class="bg-barro text-white pt-2">
             <div class="container">
                 <!-- columna izquierda del footer -->
                 <div class="row align-items-center">
