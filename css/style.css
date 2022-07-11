@@ -1,23 +1,33 @@
-/* Agregados unos pocos estilos y medias queries para poder adaptar el tamaño del texto en el banner de la página "la casita barroca" */
-
+/* Estilos globales */
 .bg-barro {
     background-color: #8E37A6;
 }
 
 body {
-    background-color: rgb(231, 211, 202, 25%);
+    background-image: linear-gradient(to bottom right, rgb(231, 211, 202), rgba(231, 211, 202, 0.25));
 }
 
-.card {
-    box-shadow: 2px 2px 5px rgb(0,0,0,25%);
+/* Estilos del navbar */
+.logo:hover::after {
+    content: "INICIO";
+    margin-left: 5px;
+    font-size: 12px;
+    color: white;
+}
+
+.navegacion li {
+    transition: transform 0.3s;
 }
 
 .navegacion li:hover {
     transform: scale(1.1);
     font-weight: bold;
 }
+.navegacion li:active{
+    transform: scale(0.9);
+}
 
-
+/* Estilo de botones y tarjetas */
 .boton {
     background-color: #893492;
     color: white;
@@ -30,6 +40,16 @@ body {
     border: solid 1px #711d7a;
 }
 
+.card {
+    box-shadow: 2px 2px 5px rgb(0,0,0,25%);
+    transition: transform 0.5s;
+}
+
+.card:hover{
+    transform: scale(1.15);
+}
+
+/* Estilos de index */
 .proyecto__texto {
     text-align: center;
     max-width: 800px;
@@ -45,9 +65,7 @@ body {
 .proyecto__img {
     display: flex;
 }
-/* .card{
-    position: relative;
-} */
+
 .card span{
     position: absolute;
     background-color: #893492;
@@ -71,20 +89,7 @@ body {
     }
 }
 
-.card {
-    transition: transform 0.5s;
-}
-.card:hover{
-    transform: scale(1.15);
-}
-
-/* .about {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    column-gap: 50px;
-    font-size: 1.3rem;
-    align-items: center;
-} */
+/* Estilos página "La Casita" */
 .about{
     font-size: 20px;
     line-height: 2rem;
@@ -97,7 +102,6 @@ body {
     float: right;
     width: 400px;
 }
-
 
 .servicios {
     margin-top: 50px;
@@ -114,24 +118,13 @@ body {
 }
 .servicios__detalle-card {
     max-width: 400px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgb(0,0,0,25%);
 }
 .servicios__detalle-card img {
     width: 95%;
     margin: 0 10px 10px;
 }
 
-
-.ACstyle-title{
-    font-size: 3rem;
-}
-
-.ACstyle-text {
-    font-size: 2rem;
-}
-
+/* Estilos página Contacto */
 .contacto {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -144,17 +137,9 @@ body {
 }
 
 
-
+/* medias queries */
 @media (max-width: 992px) {
-    .ACstyle-title{
-        font-size: 2rem;
-    }
-    
-    .ACstyle-text {
-        font-size: 1.5rem;
-    }
-
-    .contacto{
+        .contacto{
         grid-template-columns: 1fr;
         justify-items: center;
     }
@@ -174,15 +159,5 @@ body {
 
     .servicios__detalle {
         grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 576px) {
-    .ACstyle-title{
-        font-size: 1.5rem;
-    }
-    
-    .ACstyle-text {
-        font-size: 1rem;
     }
 }

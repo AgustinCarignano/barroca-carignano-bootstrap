@@ -17,7 +17,7 @@
             <!-- Navbar que se comprime en un menú pequeño con el tamaño de la pantalla -->
             <nav class="navbar navbar-expand-md">
                 <div class="container">
-                    <a class="navbar-brand" href="../index.html">
+                    <a class="navbar-brand logo" href="../index.html">
                         <img src="../imagenes/logo-principal2.png" width="120" height="80" alt="" />
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,9 +31,6 @@
                             <li class="nav-item">
                                 <a class="nav-link text-white fw-bold" href="./productos.html">Productos</a>
                             </li>
-                            <!-- <li class="nav-item">
-                                <a class="nav-link text-white" href="./asesoramiento.html">Asesoramiento</a>
-                            </li> -->
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="./about.html">La Casita</a>
                             </li>
@@ -50,112 +47,65 @@
             <!-- Título de la página -->
             <h2 class="titulos my-3 bg-barro text-light py-2 text-center">Productos</h2>
 
-            <!-- Contenido principal -->
-            <!-- <div class="container d-flex justify-content-between"> -->
-                <!-- 1° sección: la idea es tener un menú de opciones para seleccionar tipo de producto. Al achicar la pantalla se complime en un ícono, pero no pude modificarlo de forma tal de que pueda leerse correctamente al desplegarlo en pantalla mobile. -->
-                <!-- <section class="col-2 my-3">
-                    <p>
-                        <button class="btn btn-primary fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-                        ≡
-                        </button>
-                    </p>
-                    <div style="min-height: 120px;">
-                        <div class="collapse multi-collapse" id="collapseWidthExample">
-                            <div class="card card-body" style="width: 200px;">
-                                <ul class="list-group">
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                        Todo
-                                    </li>
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                        Conjuntos
-                                    </li>
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                        Camisas
-                                    </li>
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                        Jeans
-                                    </li>
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                        Remeras
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section> -->
-
-                <!-- 2° sección: tarjetas de productos -->
+                <!--tarjetas de productos -->
                 <section class="container">
                     <div class="row">
-                        <div class="card m-auto my-3" style="width: 18rem;">
+                        <article class="card m-auto my-3" style="width: 18rem;">
                             <img src="../imagenes/camisa.jpeg" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Camisa multicolor</h5>
                                 <p class="card-text">Talles: L, XL, XXL <br>Precio: $3500</p>
-                                <!-- <a href="#" class="btn btn-primary">Agregar</a> -->
                             </div>
-                        </div>
-                        <div class="card m-auto my-3" style="width: 18rem;">
+                        </article>
+                        <article class="card m-auto my-3" style="width: 18rem;">
                             <img src="../imagenes/pantalon1.jpeg" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Pantalón floreado</h5>
                                 <p class="card-text">Talles: M, L, XL <br>Precio: $2700</p>
-                                <!-- <a href="#" class="btn btn-primary">Agregar</a> -->
                             </div>
-                        </div>
-                        <div class="card m-auto my-3" style="width: 18rem;">
+                        </article>
+                        <article class="card m-auto my-3" style="width: 18rem;">
                             <img src="../imagenes/remera.png" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Remera estampada</h5>
                                 <p class="card-text">Talles: S, M, L, XL, XXL <br>Precio: $2250</p>
-                                <!-- <a href="#" class="btn btn-primary">Agregar</a> -->
                             </div>
-                        </div>
-                        <div class="card m-auto my-3" style="width: 18rem;">
+                        </article>
+                        <article class="card m-auto my-3" style="width: 18rem;">
                             <img src="../imagenes/conjunto-verde.png" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Conjunto verde</h5>
                                 <p class="card-text">Talles: M, L <br>Precio: $4500</p>
-                                <!-- <a href="#" class="btn btn-primary">Agregar</a> -->
                             </div>
-                        </div>
-                        <div class="card m-auto my-3" style="width: 18rem;">
+                        </article>
+                        <article class="card m-auto my-3" style="width: 18rem;">
                             <img src="../imagenes/jean.png" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Jean azul</h5>
                                 <p class="card-text">Talles: S, M, L <br>Precio: $2900</p>
-                                <!-- <a href="#" class="btn btn-primary">Agregar</a> -->
                             </div>
-                        </div>
-                        <div class="card m-auto my-3" style="width: 18rem;">
+                        </article>
+                        <article class="card m-auto my-3" style="width: 18rem;">
                             <img src="../imagenes/jean2.png" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <h5 class="card-title">jean gastado</h5>
                                 <p class="card-text">Talles: M, L, XL <br>Precio: $2900</p>
-                                <!-- <a href="#" class="btn btn-primary">Agregar</a> -->
                             </div>
-                        </div>
-                        <div class="card m-auto my-3" style="width: 18rem;">
+                        </article>
+                        <article class="card m-auto my-3" style="width: 18rem;">
                             <img src="../imagenes/conjunto-negro.png" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Conjunto negro</h5>
                                 <p class="card-text">Talles: S, L, XL <br>Precio: $4700</p>
-                                <!-- <a href="#" class="btn btn-primary">Agregar</a> -->
                             </div>
-                        </div>
-                        <div class="card m-auto my-3" style="width: 18rem;">
+                        </article>
+                        <article class="card m-auto my-3" style="width: 18rem;">
                             <img src="../imagenes/campera.png" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Campera verde</h5>
                                 <p class="card-text">Talles: S, M, XXL <br>Precio: $3800</p>
-                                <!-- <a href="#" class="btn boton">Agregar</a> -->
                             </div>
-                        </div>
+                        </article>
                     </div>
                     
                 </section>
