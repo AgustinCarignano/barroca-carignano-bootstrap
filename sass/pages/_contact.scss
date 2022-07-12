@@ -1,0 +1,22 @@
+.contacto {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 100px;
+    
+    &__btn {
+        text-align: center;
+    }
+}
+
+
+/* media querie */
+@media (max-width: 992px) {
+    .contacto{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .formulario{
+        max-width: 300px;
+    }
+}

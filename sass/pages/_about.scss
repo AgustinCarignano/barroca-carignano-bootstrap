@@ -1,0 +1,44 @@
+.about{
+    font-size: 20px;
+    line-height: 2rem;
+
+    & span {
+        font-weight: bold;
+    }
+
+    & img {
+        float: right;
+        width: 400px;
+    }
+}
+
+
+.servicios {
+    margin-top: 50px;
+
+    &__detalle {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        justify-items: center;
+        text-align: center;
+        font-size: 1.6rem;
+        margin-top: 30px;
+
+        &-card {
+            max-width: 400px;
+
+            & img {
+                width: 95%;
+                margin: 0 10px 10px;
+            }
+        }
+    }
+}
+
+/* media querie */
+@media (max-width: 768px) {
+    .servicios__detalle {
+        grid-template-columns: 1fr;
+    }
+}
