@@ -33,9 +33,11 @@ $icons: (
 
 @each $name, $background in $icons {
     .bi-#{$name}{
-        background-color: $background;
-        padding: 0 5px;
+        padding: 0 5px 5px 5px;
         border-radius: 10px;
+        &:hover{
+            background-color: $background;
+        }   
     }
 }
 

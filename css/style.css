@@ -20,19 +20,22 @@ main {
 
 /* Usé un map con el bucle each para dar algo de estilo a los íconos del footer. Está un poco forzado porque no va con la estética general, por lo que eguramente no quedará para futuras entregas. */
 .bi-whatsapp {
-  background-color: green;
-  padding: 0 5px;
+  padding: 0 5px 5px 5px;
   border-radius: 10px; }
+  .bi-whatsapp:hover {
+    background-color: green; }
 
 .bi-envelope {
-  background-color: red;
-  padding: 0 5px;
+  padding: 0 5px 5px 5px;
   border-radius: 10px; }
+  .bi-envelope:hover {
+    background-color: red; }
 
 .bi-instagram {
-  background-color: blue;
-  padding: 0 5px;
+  padding: 0 5px 5px 5px;
   border-radius: 10px; }
+  .bi-instagram:hover {
+    background-color: blue; }
 
 /* También probé en hacerlo con un map-get, que lo dejo comentado por si es necesario para la entrega. */
 /* .bi-whatsapp {
