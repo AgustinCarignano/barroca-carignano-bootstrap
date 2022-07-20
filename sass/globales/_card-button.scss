@@ -1,5 +1,6 @@
 .boton {
-    background-color: $bg-barro;
+    @extend .bg-barro;
+    /* background-color: $bg-barro; */
     color: white;
     transition: background 0.3s;
 
@@ -16,5 +17,6 @@
 
     &:hover{
         transform: scale(1.15);
+        z-index: 10;
     }
 }

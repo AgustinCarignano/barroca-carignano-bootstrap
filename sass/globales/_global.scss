@@ -6,3 +6,53 @@ body {
     background-image: linear-gradient(to bottom right, $bg-body, $bg-body-25);
 }
 
+main {
+    padding: 20px 0;
+}
+
+.titulo-index {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Extendí las propiedades de la clase .bg-barro, que solo tiene una línea pero no tenía muchos más lugares donde usarla, y agregé tambien los estilos del títul del index. */
+.titulos {
+    @extend .titulo-index;
+    @extend .bg-barro;
+    /* background-color: $bg-barro; */
+    padding: 10px;
+    color: whitesmoke;
+}
+
+/* Usé un map con el bucle each para dar algo de estilo a los íconos del footer. Está un poco forzado porque no va con la estética general, por lo que eguramente no quedará para futuras entregas. */
+$icons: (
+    "whatsapp": green,
+    "envelope": red,
+    "instagram": blue,
+);
+
+@each $name, $background in $icons {
+    .bi-#{$name}{
+        background-color: $background;
+        padding: 0 5px;
+        border-radius: 10px;
+    }
+}
+
+/* También probé en hacerlo con un map-get, que lo dejo comentado por si es necesario para la entrega. */
+
+/* .bi-whatsapp {
+    background-color: map-get($map: $icons, $key: whatsapp);
+    padding: 0 5px;
+    border-radius: 10px;
+}
+.bi-envelope {
+    background-color: map-get($map: $icons, $key: envelope);
+    padding: 0 5px;
+    border-radius: 10px;
+}
+.bi-instagram {
+    background-color: map-get($map: $icons, $key: instagram);
+    padding: 0 5px;
+    border-radius: 10px;
+} */

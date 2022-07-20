@@ -1,3 +1,13 @@
+.canales {
+    font-size: 1.3rem;
+    text-align: left;
+
+    &-nota{
+        font-size: 1rem;
+        
+    }
+}
+
 .contacto {
     display: grid;
     grid-template-columns: 1fr 2fr;
