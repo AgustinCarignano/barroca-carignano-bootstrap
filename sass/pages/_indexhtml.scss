@@ -17,7 +17,7 @@
     display: flex;
 }
 
-/* .card span{
+.card span{
     position: absolute;
     background-color: $bg-barro;
     border-top-right-radius: 8px;
@@ -39,40 +39,6 @@
     }
     100%{
         background-color: $bg-barro;
-        color: white;
-    }
-} */
-
-/* Eliminé los estilos y animaciones dados a la etiqueta span para poder usar un mixin */
-@mixin span($color, $fondo) {
-    position: absolute;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    top: 20px;
-    left: 12px;
-    padding: 5px;
-    color: $color;
-    background-color: $fondo;
-}
-
-.span1 {
-    @include span(white, $bg-barro);
-}
-
-.span2 {
-    @include span($bg-body, black);
-}
-
-.span3 {
-    @include span(rgb(212, 216, 198), blue);
-}
-
-.mapa {
-    list-style: none;
-    padding: 0;
-
-    a {
-        text-decoration: none;
         color: white;
     }
 }

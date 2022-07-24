@@ -1,6 +1,5 @@
 .boton {
-    @extend .bg-barro;
-    /* background-color: $bg-barro; */
+    background-color: $bg-barro;
     color: white;
     transition: background 0.3s;
 
