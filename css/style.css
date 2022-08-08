@@ -68,6 +68,7 @@ main {
     border: solid 1px #711d7a; }
 
 .card {
+  padding-top: 12px;
   box-shadow: 2px 2px 5px black;
   transition: transform 0.5s 0.5s; }
   .card:hover {
